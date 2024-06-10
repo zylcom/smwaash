@@ -1,0 +1,1367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smwaash</title>
+    <meta
+      name="description"
+      content="Smwaash is cleaning services that can smash all dirt in your building"
+    />
+  </head>
+
+  <body
+    class="[&:has(#menu-toggle:checked)]:h-svh [&:has(#menu-toggle:checked)]:overflow-hidden"
+  >
+    <header class="max-h-screen overflow-hidden">
+      <nav
+        class="fixed left-0 top-0 z-20 grid w-full grid-cols-2 items-center border-b bg-white/70 shadow-sm backdrop-blur-lg lg:flex lg:items-center lg:justify-between lg:px-14"
+      >
+        <div
+          class="peer relative z-30 col-span-2 flex w-full items-center justify-between py-4 shadow-sm lg:w-auto [&:has(#menu-toggle:checked)]:bg-white lg:[&:has(#menu-toggle:checked)]:bg-transparent"
+        >
+          <a class="pl-4 text-4xl font-medium lg:hidden" href="/">Smwaash.</a>
+          <a class="hidden pl-4 text-4xl font-medium lg:block" href="/">SM.</a>
+
+          <label
+            for="menu-toggle"
+            class="group ml-auto cursor-pointer pr-4 lg:hidden"
+          >
+            <input type="checkbox" name="" id="menu-toggle" class="hidden" />
+
+            <div
+              class="flex flex-col items-center gap-y-2 [&_span]:transition-all [&_span]:duration-300 [&_span]:ease-in"
+            >
+              <span
+                class="block h-[2px] w-7 bg-black [transform-origin:7%] group-has-[#menu-toggle:checked]:w-8 group-has-[#menu-toggle:checked]:rotate-45"
+              >
+              </span>
+              <span
+                class="block h-[2px] w-7 bg-black group-has-[#menu-toggle:checked]:-translate-x-1 group-has-[#menu-toggle:checked]:opacity-0"
+              >
+              </span>
+              <span
+                class="block h-[2px] w-7 bg-black [transform-origin:7%] group-has-[#menu-toggle:checked]:w-8 group-has-[#menu-toggle:checked]:-rotate-45"
+              >
+              </span>
+            </div>
+          </label>
+        </div>
+
+        <ul
+          class="fixed -left-full top-0 z-10 col-span-2 h-full min-h-svh w-full overflow-y-auto bg-white px-4 pb-10 pt-16 transition-all duration-300 ease-in-out peer-has-[#menu-toggle:checked]:left-0 lg:relative lg:left-0 lg:flex lg:min-h-0 lg:w-auto lg:gap-x-6 lg:bg-transparent lg:p-0 [&_li:not(:last-child)]:border-b lg:[&_li:not(:last-child)]:border-b-0 [&_li:not(:last-child)_a]:text-2xl [&_li:not(:last-child)_a]:font-semibold lg:[&_li:not(:last-child)_a]:text-lg [&_li]:py-6 lg:[&_li]:p-0"
+        >
+          <li><a class="lg:hidden" href="#">Home</a></li>
+
+          <li>
+            <a
+              class="flex items-center gap-x-1 text-black/80 hover:text-black"
+              href="#"
+              >Services
+
+              <svg
+                class="hidden h-4 w-4 translate-y-[.1rem] stroke-black transition-transform duration-300 peer-checked:rotate-180 lg:block"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="flex items-center gap-x-1 text-black/80 hover:text-black"
+              href="#"
+              >Industries
+
+              <svg
+                class="hidden h-4 w-4 translate-y-[.1rem] stroke-black transition-transform duration-300 peer-checked:rotate-180 lg:block"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="flex items-center gap-x-1 text-black/80 hover:text-black"
+              href="#"
+              >Company
+
+              <svg
+                class="hidden h-4 w-4 translate-y-[.1rem] stroke-black transition-transform duration-300 peer-checked:rotate-180 lg:block"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="flex items-center gap-x-1 text-black/80 hover:text-black"
+              href="#"
+              >Career
+
+              <svg
+                class="hidden h-4 w-4 translate-y-[.1rem] stroke-black transition-transform duration-300 peer-checked:rotate-180 lg:block"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="text-black/80 hover:text-black" href="#">Calculator</a>
+          </li>
+
+          <li class="text-center lg:hidden [&>a]:text-base [&>a]:font-medium">
+            <a
+              class="block w-full rounded-full border border-black bg-black py-2 text-white"
+              href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="hidden rounded-full border border-black bg-black px-8 py-2 text-lg font-medium text-white hover:bg-transparent hover:text-black lg:block"
+        >
+          Hire
+        </a>
+      </nav>
+    </header>
+
+    <main class="space-y-16">
+      <section class="mb-72 min-h-svh md:mb-0">
+        <figure class="relative">
+          <!-- Photo by <a href="https://unsplash.com/@manyaaa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Manya Krishnaswamy</a> on <a href="https://unsplash.com/photos/gold-and-white-concrete-temple-np4tN1ALQDE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+
+          <img
+            src="/image/manya-krishnaswamy-np4tN1ALQDE-unsplash.jpg"
+            alt=""
+            class="h-[120svh] w-full rounded-b-3xl object-cover"
+          />
+
+          <div
+            class="absolute left-0 top-0 h-full w-full flex-col justify-center rounded-b-3xl bg-black/30 px-5 text-center md:flex"
+          >
+            <div
+              class="m-auto mb-0 flex h-[120svh] max-w-sm flex-col items-center justify-center md:mb-8 md:max-w-md lg:max-w-2xl"
+            >
+              <h2
+                class="mb-6 text-3xl font-semibold text-white drop-shadow-md md:text-6xl md:font-bold"
+              >
+                Encourage Cleanliness with Outsourcing Solutions
+              </h2>
+
+              <p class="mb-8 text-lg text-white md:text-xl">
+                Optimize your budget, engage a team of proficient professionals
+                for cleaning your building. This method save your costs and make
+                more profit.
+              </p>
+
+              <button
+                class="block w-full rounded-full bg-white py-2 font-medium sm:mx-auto sm:w-auto sm:px-8"
+              >
+                Start hiring
+              </button>
+            </div>
+
+            <figcaption
+              class="mt-auto w-full px-4 text-sm font-medium text-black md:px-16 md:text-base md:text-white"
+            >
+              <div
+                class="grid w-full grid-cols-2 gap-x-6 gap-y-10 border-t border-t-white py-8 md:flex md:justify-between [&_p]:text-lg [&_p]:font-light [&_span]:text-4xl [&_span]:font-bold"
+              >
+                <div>
+                  <span>150+</span>
+                  <p>Customers</p>
+                </div>
+
+                <div>
+                  <span>11</span>
+                  <p>Awards</p>
+                </div>
+
+                <div>
+                  <span>99%</span>
+                  <p>Satisfaction</p>
+                </div>
+
+                <div>
+                  <span>7</span>
+                  <p>Partners</p>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+      </section>
+
+      <section class="mx-auto max-w-screen-lg overflow-hidden">
+        <h3 class="mb-10 text-center text-2xl font-semibold md:text-4xl">
+          Trusted by industry leaders
+        </h3>
+
+        <div
+          class="overflow-hiddens relative grid grid-cols-[repeat(2,1024px)] before:absolute before:right-0 before:z-10 before:h-24 before:w-full before:bg-gradient-to-l before:from-white before:from-5% before:to-20% before:content-[''] after:absolute after:left-0 after:h-24 after:w-full after:bg-gradient-to-r after:from-white after:from-5% after:to-20% after:content-[''] [&_img]:w-full"
+        >
+          <div
+            class="relative grid h-24 animate-marquee grid-cols-12 grid-rows-1 items-center gap-x-4 px-2 duration-[10s] [&>div]:flex [&>div]:h-full [&>div]:items-center [&>div]:rounded-md [&>div]:bg-slate-100 [&>div]:p-4"
+          >
+            <div class="col-span-2" title="PT Industri Kereta Api (Persero)">
+              <img
+                src="/logo_industri_kereta_api_indonesia.svg"
+                alt="PT Industri Kereta Api (Persero)"
+              />
+            </div>
+
+            <div class="col-span-2" title="Perum BULOG">
+              <img src="/logo_bulog.svg" alt="Perum BULOG" />
+            </div>
+
+            <div class="col-span-2" title="PT Krakatau Steel (Persero) Tbk">
+              <img
+                src="/logo_krakatau_steel.svg"
+                alt="PT Krakatau Steel (Persero) Tbk"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Jasa Marga (Persero) Tbk">
+              <img
+                src="/jasa_marga_logo.svg"
+                alt="PT Jasa Marga (Persero) Tbk"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Telkom Indonesia (Persero) Tbk">
+              <img
+                src="/telkom_indonesia.svg"
+                alt="PT Telkom Indonesia (Persero) Tbk"
+              />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="PT Pelayaran Nasional Indonesia (Persero)"
+            >
+              <img
+                src="/logo_pelni.svg"
+                alt="PT Pelayaran Nasional Indonesia (Persero)"
+              />
+            </div>
+          </div>
+
+          <div
+            class="relative grid h-24 animate-marquee grid-cols-12 grid-rows-1 items-center gap-x-4 px-2 transition-transform duration-[10s] ease-linear [&>div]:flex [&>div]:h-full [&>div]:items-center [&>div]:rounded-md [&>div]:bg-slate-100 [&>div]:p-4"
+          >
+            <div class="col-span-2" title="PT Industri Kereta Api (Persero)">
+              <img
+                src="/logo_industri_kereta_api_indonesia.svg"
+                alt="PT Industri Kereta Api (Persero)"
+              />
+            </div>
+
+            <div class="col-span-2" title="Perum BULOG">
+              <img src="/logo_bulog.svg" alt="Perum BULOG" />
+            </div>
+
+            <div class="col-span-2" title="PT Krakatau Steel (Persero) Tbk">
+              <img
+                src="/logo_krakatau_steel.svg"
+                alt="PT Krakatau Steel (Persero) Tbk"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Jasa Marga (Persero) Tbk">
+              <img
+                src="/jasa_marga_logo.svg"
+                alt="PT Jasa Marga (Persero) Tbk"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Telkom Indonesia (Persero) Tbk">
+              <img
+                src="/telkom_indonesia.svg"
+                alt="PT Telkom Indonesia (Persero) Tbk"
+              />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="PT Pelayaran Nasional Indonesia (Persero)"
+            >
+              <img
+                src="/logo_pelni.svg"
+                alt="PT Pelayaran Nasional Indonesia (Persero)"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="overflow-hiddens relative mt-4 grid grid-cols-[repeat(2,1024px)] before:absolute before:right-0 before:z-10 before:h-24 before:w-full before:bg-gradient-to-l before:from-white before:from-5% before:to-20% before:content-[''] after:absolute after:left-0 after:h-24 after:w-full after:bg-gradient-to-r after:from-white after:from-5% after:to-20% after:content-[''] [&_img]:w-full"
+        >
+          <div
+            class="relative -left-full grid h-24 animate-marquee-backward grid-cols-12 grid-rows-1 items-center gap-x-4 px-2 [&>div]:flex [&>div]:h-full [&>div]:items-center [&>div]:rounded-md [&>div]:bg-slate-100 [&>div]:p-4"
+          >
+            <div
+              class="col-span-2"
+              title="PT Perusahaan Listrik Negara (Persero)"
+            >
+              <img
+                src="/logo_pln.svg"
+                alt="PT Perusahaan Listrik Negara (Persero)"
+              />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="Perum Percetakan Uang Republik Indonesia"
+            >
+              <img
+                src="/peruri_logo.svg"
+                alt="Perum Percetakan Uang Republik Indonesia"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Pertamina (Persero)">
+              <img src="/pertamina_logo.svg" alt="PT Pertamina (Persero)" />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="PT Mineral Industri Indonesia (Persero)"
+            >
+              <img
+                src="/logo_mind_id.svg"
+                alt="PT Mineral Industri Indonesia (Persero)"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Garuda Indonesia (Persero) Tbk">
+              <img
+                src="/garuda_indonesia_logo.svg"
+                alt="PT Garuda Indonesia (Persero) Tbk"
+              />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="PT Asuransi Sosial Angkatan Bersenjata Republik Indonesia (Persero)"
+            >
+              <img
+                src="/logo_asabri.svg"
+                alt="PT Asuransi Sosial Angkatan Bersenjata Republik Indonesia (Persero)"
+              />
+            </div>
+          </div>
+
+          <div
+            class="relative -left-full grid h-24 animate-marquee-backward grid-cols-12 grid-rows-1 items-center gap-x-4 px-2 transition-transform ease-linear [&>div]:flex [&>div]:h-full [&>div]:items-center [&>div]:rounded-md [&>div]:bg-slate-100 [&>div]:p-4"
+          >
+            <div
+              class="col-span-2"
+              title="PT Perusahaan Listrik Negara (Persero)"
+            >
+              <img
+                src="/logo_pln.svg"
+                alt="PT Perusahaan Listrik Negara (Persero)"
+              />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="Perum Percetakan Uang Republik Indonesia"
+            >
+              <img
+                src="/peruri_logo.svg"
+                alt="Perum Percetakan Uang Republik Indonesia"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Pertamina (Persero)">
+              <img src="/pertamina_logo.svg" alt="PT Pertamina (Persero)" />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="PT Mineral Industri Indonesia (Persero)"
+            >
+              <img
+                src="/logo_mind_id.svg"
+                alt="PT Mineral Industri Indonesia (Persero)"
+              />
+            </div>
+
+            <div class="col-span-2" title="PT Garuda Indonesia (Persero) Tbk">
+              <img
+                src="/garuda_indonesia_logo.svg"
+                alt="PT Garuda Indonesia (Persero) Tbk"
+              />
+            </div>
+
+            <div
+              class="col-span-2"
+              title="PT Asuransi Sosial Angkatan Bersenjata Republik Indonesia (Persero)"
+            >
+              <img
+                src="/logo_asabri.svg"
+                alt="PT Asuransi Sosial Angkatan Bersenjata Republik Indonesia (Persero)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="mx-auto max-w-screen-xl p-4 md:grid md:grid-cols-2 md:gap-x-4 md:p-16 lg:grid-cols-5"
+      >
+        <div class="w-full rounded-3xl bg-violet-100 px-6 py-10 lg:col-span-3">
+          <span
+            class="rounded-full border border-violet-400 px-4 py-2 text-violet-400"
+          >
+            Our method
+          </span>
+
+          <p class="my-14 text-xl font-normal md:text-2xl lg:text-3xl">
+            Our method and strategy are to pointing your core goal: minimaze
+            costs, fast workflow proccess, work safety and adapting to
+            environment changes.
+          </p>
+
+          <p class="text-base lg:text-lg">
+            Smwaash is a cleaning solutions company. We will analysis structure
+            for costs optimization and handle the cleaning stuff so that you can
+            focus on important tasks.
+          </p>
+        </div>
+
+        <img
+          class="mt-4 h-full w-full rounded-3xl object-cover object-top md:mt-0 lg:col-span-2"
+          src="/image/clean_worker.jpg"
+          aslt="Analysis Leader"
+        />
+      </section>
+
+      <section
+        class="mx-auto max-w-screen-xl gap-x-4 space-y-4 px-4 md:p-16 lg:grid lg:grid-cols-10 lg:grid-rows-[repeat(4,min-content)]"
+      >
+        <h3
+          class="mb-10 text-center text-3xl font-medium md:text-left md:text-4xl lg:col-span-10 lg:text-5xl lg:font-semibold"
+        >
+          Problems we solve
+        </h3>
+
+        <div class="w-full rounded-3xl bg-green-100 p-4 lg:col-span-4">
+          <label
+            for="position"
+            class="mb-10 flex w-full cursor-pointer items-center justify-between rounded-xl bg-green-700/80 p-5 text-2xl font-semibold text-white hover:bg-green-700 md:text-3xl"
+          >
+            ACP Cleaning
+            <input
+              class="peer hidden"
+              type="checkbox"
+              name="position"
+              id="position"
+            />
+
+            <svg
+              class="h-6 w-6 stroke-white transition-transform duration-300 peer-checked:rotate-180"
+              data-slot="icon"
+              fill="none"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              ></path>
+            </svg>
+          </label>
+
+          <div>
+            <p class="mb-7 px-2">
+              Smwaash services are competitively priced, offering additional
+              value with preferential rates for multiple service engagements.
+            </p>
+
+            <div>
+              <p class="mb-4 px-2 md:font-medium">Estimated costs</p>
+
+              <strong class="mb-10 block px-2 text-3xl font-medium md:text-5xl">
+                Rp 120.000/M<sup>2</sup>
+              </strong>
+
+              <button
+                class="w-full rounded-full border border-black bg-transparent py-2 text-lg font-medium text-black hover:bg-black/85 hover:text-white lg:px-10"
+              >
+                Start hiring
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full rounded-3xl bg-yellow-100 px-6 pb-16 pt-8 lg:col-span-3 lg:flex lg:flex-col lg:justify-between"
+        >
+          <h3 class="mb-6 text-3xl font-medium">ACP cleaning</h3>
+
+          <p>
+            Our services cover the cleaning of Aluminium Composite Panels (ACP),
+            executed by our team of specialists who ensure efficiency and
+            effectiveness in every task.
+          </p>
+        </div>
+
+        <div
+          class="w-full rounded-3xl bg-pink-100 px-6 pb-16 pt-8 lg:col-span-3 lg:flex lg:flex-col lg:justify-between"
+        >
+          <h3 class="mb-6 text-3xl font-medium">Window washing</h3>
+
+          <p>
+            Our proficiency in window washing guarantees that we can effectively
+            clean windows, ensuring the glass remains undamaged.
+          </p>
+        </div>
+
+        <div
+          class="w-full rounded-3xl bg-blue-100 px-6 pb-16 pt-8 lg:col-span-4 lg:flex lg:flex-col lg:justify-end"
+        >
+          <h3 class="mb-6 text-3xl font-medium lg:mt-16">
+            Walls painting & repair
+          </h3>
+
+          <p>
+            Our services extend to the restoration of walls, offering both
+            repainting and repair solutions for walls with compromised
+            paintwork.
+          </p>
+        </div>
+
+        <div
+          class="w-full rounded-3xl bg-cyan-100 px-6 pb-16 pt-8 lg:col-span-6 lg:flex lg:gap-x-8"
+        >
+          <svg
+            class="mb-8 w-1/3 stroke-gray-700 lg:order-2 lg:mb-4 lg:ml-auto lg:w-96"
+            data-slot="icon"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+            ></path>
+          </svg>
+
+          <div class="lg:order-1 lg:flex lg:flex-col lg:justify-end">
+            <h3 class="mb-6 text-3xl font-medium">
+              Sealant installation &amp; repair
+            </h3>
+
+            <p>
+              Sealant is a substance used to block the passage of fluids through
+              openings in materials. Upholding the integrity of your building is
+              essential to enhance its longevity and reduce future maintenance
+              expenses.
+            </p>
+          </div>
+        </div>
+
+        <img
+          class="max-h-[40rem] w-full rounded-3xl object-cover lg:col-span-10"
+          src="/image/thisisengineering-0LnH9j9Wirw-unsplash.jpg"
+          alt="Analyzing meeting"
+        />
+      </section>
+
+      <section class="p-6 md:p-16 lg:grid lg:grid-cols-10 lg:gap-x-8">
+        <div class="lg:col-span-4">
+          <p class="mb-8 text-3xl font-normal">
+            Strategic outsourcing and outstaffing solutions to propel the
+            sustainable development of your business.
+          </p>
+
+          <button
+            class="mb-20 w-full rounded-full bg-black/85 py-2 text-lg font-medium text-white lg:w-auto lg:px-10"
+          >
+            Request survey
+          </button>
+        </div>
+
+        <div class="lg:col-span-6 [&>div]:border-b [&>div]:border-b-slate-300">
+          <div class="border-t border-t-slate-300 px-4 lg:border-t-0">
+            <label
+              class="group peer flex cursor-pointer list-none items-center justify-between py-8 lg:pt-0"
+            >
+              <span class="text-2xl font-bold lg:text-3xl lg:font-semibold">
+                Tools and equipments
+              </span>
+
+              <input
+                class="peer hidden"
+                type="radio"
+                name="strategy"
+                checked
+                data-checked="checked"
+              />
+
+              <svg
+                class="h-8 w-8 rotate-45 opacity-60 transition-transform duration-500 group-hover:opacity-100 peer-checked:-rotate-45"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H6"
+                ></path>
+              </svg>
+            </label>
+
+            <div
+              class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 peer-has-[input[type=radio]:checked]:max-h-80 peer-has-[input[type=radio]:checked]:pb-8 peer-has-[input[type=radio]:checked]:opacity-100"
+            >
+              At Smwaash, we have the proper tools and equipments with high
+              quality and always in top condition. Every team has been certified
+              that enables us to work with safety and comfortable.
+            </div>
+          </div>
+
+          <div class="px-4">
+            <label
+              class="group peer flex cursor-pointer list-none items-center justify-between py-8"
+            >
+              <span class="text-2xl font-bold lg:text-3xl lg:font-semibold"
+                >Better workflow &amp; efficiency</span
+              >
+
+              <input class="peer hidden" type="radio" name="strategy" />
+
+              <svg
+                class="h-8 w-8 rotate-45 opacity-60 transition-transform duration-500 group-hover:opacity-100 peer-checked:-rotate-45"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H6"
+                ></path>
+              </svg>
+            </label>
+
+            <div
+              class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 peer-has-[input[type=radio]:checked]:max-h-80 peer-has-[input[type=radio]:checked]:pb-8 peer-has-[input[type=radio]:checked]:opacity-100"
+            >
+              Our team is dedicated to optimizing our performance to deliver
+              superior outcomes for every client. We are committed to achieving
+              set goals and enhancing our cleaning methodologies, which will
+              elevate our efficiency and expedite our operations to the pinnacle
+              of industry standards.
+            </div>
+          </div>
+
+          <div class="px-4">
+            <label
+              class="group peer flex cursor-pointer list-none items-center justify-between py-8"
+            >
+              <span class="text-2xl font-bold lg:text-3xl lg:font-semibold">
+                Professional teams
+              </span>
+
+              <input class="peer hidden" type="radio" name="strategy" />
+
+              <svg
+                class="h-8 w-8 rotate-45 opacity-60 transition-transform duration-500 group-hover:opacity-100 peer-checked:-rotate-45"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H6"
+                ></path>
+              </svg>
+            </label>
+
+            <div
+              class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 peer-has-[input[type=radio]:checked]:max-h-80 peer-has-[input[type=radio]:checked]:pb-8 peer-has-[input[type=radio]:checked]:opacity-100"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              nemo ipsam, dolorum maiores repudiandae soluta at enim
+              reprehenderit, molestias porro, facilis beatae sunt quasi.
+              Voluptatem?
+            </div>
+          </div>
+
+          <div class="px-4">
+            <label
+              class="group peer flex cursor-pointer list-none items-center justify-between py-8"
+            >
+              <span class="text-2xl font-bold lg:text-3xl lg:font-semibold">
+                Damage protection & guarantee
+              </span>
+
+              <input class="peer hidden" type="radio" name="strategy" />
+
+              <svg
+                class="h-8 w-8 rotate-45 opacity-60 transition-transform duration-500 group-hover:opacity-100 peer-checked:-rotate-45"
+                data-slot="icon"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H6"
+                ></path>
+              </svg>
+            </label>
+
+            <div
+              class="max-h-0 overflow-hidden opacity-0 transition-all duration-1000 peer-has-[input[type=radio]:checked]:max-h-80 peer-has-[input[type=radio]:checked]:pb-8 peer-has-[input[type=radio]:checked]:opacity-100"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              nemo ipsam, dolorum maiores repudiandae soluta at enim
+              reprehenderit, molestias porro, facilis beatae sunt quasi.
+              Voluptatem?
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-4 md:p-16 lg:grid lg:grid-cols-2 lg:gap-x-4">
+        <div>
+          <h3
+            class="mb-10 text-center text-3xl font-medium lg:text-left lg:text-6xl"
+          >
+            How it works
+          </h3>
+
+          <div
+            class="relative h-[31rem] rounded-3xl bg-green-700/80 p-8 text-white lg:h-[28rem]"
+          >
+            <span class="mb-10 block font-medium">Step 1/6</span>
+
+            <h4 class="mb-4 text-3xl font-medium">Project discovery</h4>
+
+            <p class="font-normal">
+              First of all, our main objective is to survery and analyze the
+              client building structure, such as checking size of building,
+              needed tools and equipments, the number of workers and estimating
+              working time.
+            </p>
+
+            <div
+              class="absolute bottom-10 left-0 flex w-full items-center justify-center gap-x-8 px-6 lg:justify-start"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-100 bg-slate-100 p-2"
+              >
+                <svg
+                  class="h-5 w-5 -translate-x-[.1rem] stroke-green-700"
+                  data-slot="icon"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  ></path>
+                </svg>
+              </div>
+
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-100 bg-slate-100 p-2"
+              >
+                <svg
+                  class="h-5 w-5 translate-x-[.1rem] stroke-green-700"
+                  data-slot="icon"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden gap-y-4 rounded-3xl bg-sky-100 px-8 py-9 lg:flex lg:flex-col"
+        >
+          <h4 class="text-3xl font-medium">Our workflows</h4>
+
+          <p class="text-lg">
+            Our operational procedures are meticulously planned and
+            systematically organized to ensure optimal efficiency.
+          </p>
+
+          <div
+            class="flex h-full flex-col items-center justify-between [&_div]:rounded-full [&_div]:border [&_div]:border-black/80 [&_div]:px-6 [&_div]:py-2 [&_div]:font-light"
+          >
+            <div>Project discovery</div>
+            <div>Prepare requirements</div>
+            <div>Project execution</div>
+            <div>Results evaluation</div>
+            <div>Done</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-6 text-center lg:mx-auto lg:max-w-screen-xl lg:p-20">
+        <div></div>
+
+        <h3
+          class="mb-8 text-center text-4xl font-medium lg:text-7xl lg:font-bold"
+        >
+          Trusted company. Process faster. Spend less.
+        </h3>
+
+        <p class="mb-14 text-xl">
+          Clean your building with minimal costs using our services.
+        </p>
+
+        <button
+          class="mb-20 w-full rounded-full bg-black/85 py-2 text-lg font-medium text-white lg:w-auto lg:px-10"
+        >
+          Start hiring
+        </button>
+      </section>
+
+      <section class="p-4 text-white md:p-16 lg:grid lg:grid-cols-5">
+        <div
+          class="rounded-b-none rounded-t-3xl bg-sky-600 px-6 pt-16 lg:col-span-3 lg:rounded-l-3xl lg:rounded-tr-none"
+        >
+          <h3 class="mb-8 text-3xl font-semibold lg:text-5xl lg:font-bold">
+            Read what people say about our work
+          </h3>
+
+          <p class="mb-14 text-lg">
+            Our experienced teams will take care of your building sanitation,
+            cleanliness and environmental health.
+          </p>
+
+          <p class="py-10 text-[length:1.05rem] font-medium">
+            100% of our customers are satifsied
+          </p>
+        </div>
+
+        <div
+          class="rounded-b-3xl bg-purple-100 p-6 lg:col-span-2 lg:rounded-r-3xl lg:rounded-bl-none"
+        >
+          <div
+            class="relative h-[31rem] rounded-3xl bg-purple-300/80 p-8 text-black lg:h-[28rem]"
+          >
+            <span class="mb-10 block font-medium">1/6</span>
+
+            <h4 class="mb-4 text-3xl font-medium">ACP Cleaning</h4>
+
+            <p class="font-normal">
+              WOW, it's super clean. Fast process and working. With minimal
+              costs I can get many advantage. Thanks Smwaash. Smash all dirt.
+            </p>
+
+            <p class="mt-6 text-sm text-gray-700">
+              - <strong>Jonathan Joestar</strong>, Depok
+            </p>
+
+            <div
+              class="absolute bottom-10 left-0 flex w-full items-center justify-center gap-x-8 px-6 lg:justify-start"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-100 bg-slate-100 p-2"
+              >
+                <svg
+                  class="h-5 w-5 -translate-x-[.1rem] stroke-green-700"
+                  data-slot="icon"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  ></path>
+                </svg>
+              </div>
+
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-100 bg-slate-100 p-2"
+              >
+                <svg
+                  class="h-5 w-5 translate-x-[.1rem] stroke-green-700"
+                  data-slot="icon"
+                  fill="none"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-4 md:p-16">
+        <div
+          class="h-[24rem] space-y-5 rounded-3xl bg-violet-100 px-6 pt-8 text-white lg:flex lg:items-center lg:justify-center lg:gap-x-4 lg:space-y-0"
+        >
+          <div
+            class="flex gap-x-5 rounded-xl bg-violet-400 px-5 py-2 shadow-sm"
+          >
+            <svg
+              class="w-9 rounded-md"
+              xmlns="http://www.w3.org/2000/svg"
+              id="flag-icons-id"
+              viewBox="0 0 640 480"
+            >
+              <path fill="#e70011" d="M0 0h640v240H0Z" />
+              <path fill="#fff" d="M0 240h640v240H0Z" />
+            </svg>
+
+            <div class="flex flex-col">
+              <span class="text-lg font-bold">Indonesia</span>
+              <span class="text-sm">16 Offices</span>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-x-5 rounded-xl bg-violet-400 px-5 py-2 shadow-sm"
+          >
+            <svg
+              class="w-9 rounded-md"
+              xmlns="http://www.w3.org/2000/svg"
+              id="flag-icons-jp"
+              viewBox="0 0 640 480"
+            >
+              <defs>
+                <clipPath id="jp-a">
+                  <path fill-opacity=".7" d="M-88 32h640v480H-88z" />
+                </clipPath>
+              </defs>
+              <g
+                fill-rule="evenodd"
+                stroke-width="1pt"
+                clip-path="url(#jp-a)"
+                transform="translate(88 -32)"
+              >
+                <path fill="#fff" d="M-128 32h720v480h-720z" />
+                <circle
+                  cx="523.1"
+                  cy="344.1"
+                  r="194.9"
+                  fill="#bc002d"
+                  transform="translate(-168.4 8.6)scale(.76554)"
+                />
+              </g>
+            </svg>
+
+            <div class="flex flex-col">
+              <span class="text-lg font-bold">Japan</span>
+              <span class="text-sm">3 Offices</span>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-x-5 rounded-xl bg-violet-400 px-5 py-2 shadow-sm"
+          >
+            <svg
+              class="w-9 rounded-md"
+              xmlns="http://www.w3.org/2000/svg"
+              id="flag-icons-my"
+              viewBox="0 0 640 480"
+            >
+              <g clip-path="url(#my-a)">
+                <path fill="#C00" d="M0 0h640v480H0z" />
+                <path fill="#C00" d="M0 0h640v34.3H0z" />
+                <path fill="#fff" d="M0 34.3h640v34.3H0z" />
+                <path fill="#C00" d="M0 68.6h640v34.3H0z" />
+                <path fill="#fff" d="M0 102.9h640V137H0z" />
+                <path fill="#C00" d="M0 137.1h640v34.3H0z" />
+                <path fill="#fff" d="M0 171.4h640v34.3H0z" />
+                <path fill="#C00" d="M0 205.7h640V240H0z" />
+                <path fill="#fff" d="M0 240h640v34.3H0z" />
+                <path fill="#C00" d="M0 274.3h640v34.3H0z" />
+                <path fill="#fff" d="M0 308.6h640v34.3H0z" />
+                <path fill="#C00" d="M0 342.9h640V377H0z" />
+                <path fill="#fff" d="M0 377.1h640v34.3H0z" />
+                <path fill="#C00" d="M0 411.4h640v34.3H0z" />
+                <path fill="#fff" d="M0 445.7h640V480H0z" />
+                <path fill="#006" d="M0 .5h320v274.3H0z" />
+                <path
+                  fill="#FC0"
+                  d="m207.5 73.8 6 40.7 23-34-12.4 39.2 35.5-20.8-28.1 30 41-3.2-38.3 14.8 38.3 14.8-41-3.2 28.1 30-35.5-20.8 12.3 39.3-23-34.1-6 40.7-5.9-40.7-23 34 12.4-39.2-35.5 20.8 28-30-41 3.2 38.4-14.8-38.3-14.8 41 3.2-28.1-30 35.5 20.8-12.4-39.3 23 34.1zm-33.3 1.7a71.1 71.1 0 0 0-100 65 71.1 71.1 0 0 0 100 65 80 80 0 0 1-83.2 6.2 80 80 0 0 1-43.4-71.2 80 80 0 0 1 126.6-65"
+                />
+              </g>
+              <defs>
+                <clipPath id="my-a">
+                  <path fill="#fff" d="M0 0h640v480H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <div class="flex flex-col">
+              <span class="text-lg font-bold">Malaysia</span>
+              <span class="text-sm">7 Offices</span>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-x-5 rounded-xl bg-violet-400 px-5 py-2 shadow-sm"
+          >
+            <svg
+              class="w-9 rounded-md"
+              xmlns="http://www.w3.org/2000/svg"
+              id="flag-icons-sg"
+              viewBox="0 0 640 480"
+            >
+              <defs>
+                <clipPath id="sg-a">
+                  <path fill-opacity=".7" d="M0 0h640v480H0z" />
+                </clipPath>
+              </defs>
+              <g fill-rule="evenodd" clip-path="url(#sg-a)">
+                <path fill="#fff" d="M-20 0h720v480H-20z" />
+                <path fill="#df0000" d="M-20 0h720v240H-20z" />
+                <path
+                  fill="#fff"
+                  d="M146 40.2a84.4 84.4 0 0 0 .8 165.2 86 86 0 0 1-106.6-59 86 86 0 0 1 59-106c16-4.6 30.8-4.7 46.9-.2z"
+                />
+                <path
+                  fill="#fff"
+                  d="m133 110 4.9 15-13-9.2-12.8 9.4 4.7-15.2-12.8-9.3 15.9-.2 5-15 5 15h15.8zm17.5 52 5 15.1-13-9.2-12.9 9.3 4.8-15.1-12.8-9.4 15.9-.1 4.9-15.1 5 15h16zm58.5-.4 4.9 15.2-13-9.3-12.8 9.3 4.7-15.1-12.8-9.3 15.9-.2 5-15 5 15h15.8zm17.4-51.6 4.9 15.1-13-9.2-12.8 9.3 4.8-15.1-12.9-9.4 16-.1 4.8-15.1 5 15h16zm-46.3-34.3 5 15.2-13-9.3-12.9 9.4 4.8-15.2-12.8-9.4 15.8-.1 5-15.1 5 15h16z"
+                />
+              </g>
+            </svg>
+
+            <div class="flex flex-col">
+              <span class="text-lg font-bold">Singapore</span>
+              <span class="text-sm">9 Offices</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="space-y-4 p-4 md:p-16 lg:grid lg:grid-cols-2 lg:grid-rows-[repeat(2,min-content)] lg:gap-4"
+      >
+        <h3
+          class="mb-6 text-center text-3xl font-medium lg:order-1 lg:mb-0 lg:text-left lg:text-6xl"
+        >
+          Latest articles
+        </h3>
+
+        <div
+          class="group cursor-pointer overflow-hidden rounded-3xl bg-gray-100 shadow-sm lg:order-3"
+        >
+          <img
+            class="relative w-full object-cover transition-transform duration-1000 group-hover:scale-105 lg:max-h-72"
+            src="/image/anthony-fomin-5kdG24_1_Bg-unsplash.jpg"
+            alt="Why Cleaning And Sanitizing Is Important For Your Business Environment"
+          />
+
+          <div class="relative z-10 bg-gray-100">
+            <h4 class="px-6 pb-2 pt-8 text-2xl">
+              Why Cleaning And Sanitizing Is Important For Your Business
+              Environment
+            </h4>
+
+            <span class="block p-6 text-sm text-slate-500">
+              Reading time 4 min
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="group overflow-hidden rounded-3xl bg-gray-100 shadow-sm lg:order-4"
+        >
+          <img
+            class="relative w-full object-cover transition-transform duration-1000 group-hover:scale-105 lg:max-h-72"
+            src="/image/giorgio-trovato-XxAy813D66I-unsplash.jpg"
+            alt="Where Should Cleaning Chemicals Be Stored"
+          />
+
+          <div class="relative z-10 bg-gray-100">
+            <h4 class="px-6 pb-2 pt-8 text-2xl">
+              Where Should Cleaning Chemicals Be Stored
+            </h4>
+
+            <span class="block p-6 text-sm text-slate-500">
+              Reading time 4 min
+            </span>
+          </div>
+        </div>
+
+        <button
+          class="block w-full rounded-full bg-black py-2 font-medium text-white lg:order-2 lg:ml-auto lg:w-auto lg:border lg:border-black lg:bg-transparent lg:px-10 lg:py-0 lg:text-black lg:hover:bg-black lg:hover:text-white"
+        >
+          View all
+        </button>
+      </section>
+    </main>
+
+    <footer class="mt-16 p-4 md:p-16 lg:grid lg:grid-cols-10 lg:gap-x-16">
+      <div class="lg:col-span-4">
+        <h3 class="mb-4 text-2xl font-medium md:mb-6 lg:text-3xl">
+          Your Success, Our Expertise: Together We Grow
+        </h3>
+
+        <p class="mb-8">
+          Let's stay in touch! Subscribe to out newsletter to be informed about
+          the latest innovations and offers!
+        </p>
+
+        <form id="newsletter-form">
+          <label for="name">
+            <input
+              class="w-full border-b pb-2 outline-none ring-0"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+              required
+            />
+
+            <span class="mt-1 block text-xs text-red-500 opacity-0">
+              This field can not be blank
+            </span>
+          </label>
+
+          <label for="email">
+            <input
+              class="peer mt-4 w-full border-b pb-2 outline-none ring-0"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your E-mail"
+              required
+            />
+
+            <span
+              class="mt-1 block text-xs text-red-500 opacity-0 peer-required:opacity-0"
+            >
+              This field can not be blank
+            </span>
+          </label>
+
+          <p class="mt-8 text-sm text-slate-400 md:mt-14">
+            By submiting form you accept out
+            <a class="text-black" href="#">Privacy Policy</a>
+          </p>
+
+          <input
+            class="mt-2 w-full cursor-pointer rounded-full bg-black/85 py-2 text-lg font-medium text-white lg:px-10"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </div>
+
+      <div
+        class="mt-20 grid grid-cols-2 text-lg lg:col-span-6 lg:mt-0 lg:grid-cols-3"
+      >
+        <div>
+          <span class="mb-5 block text-sm text-slate-400">Navigation</span>
+
+          <ul class="space-y-4">
+            <li><a class="hover:underline" href="#">Home</a></li>
+            <li><a class="hover:underline" href="#">Services</a></li>
+            <li><a class="hover:underline" href="#">Industries</a></li>
+            <li><a class="hover:underline" href="#">About</a></li>
+            <li><a class="hover:underline" href="#">Calculator</a></li>
+            <li><a class="hover:underline" href="#">Careers</a></li>
+            <li><a class="hover:underline" href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <span class="mb-5 block text-sm text-slate-400">Main office</span>
+
+          <p>Cengkareng 11740, Jakarta, Indonesia</p>
+          <p>+62 838 0616 3238</p>
+          <!-- <p>hr@smwaash.com</p>
+          <p>info@smwaash.com</p> -->
+
+          <div class="flex w-full justify-start gap-x-6">
+            <a
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-black/40 p-2"
+              href="https://www.linkedin.com/in/sabilillah/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="#1C2033"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_412_71)">
+                  <path
+                    d="M14.6 63H5.7C2.6 63 0 60.5 0 57.5V28C0 24.9 2.5 22.5 5.7 22.5H14.6C17.7 22.5 20.3 25 20.3 28V57.5C20.4 60.5 17.8 63 14.6 63ZM5.7 27.4C5.4 27.4 5.1 27.5 5.1 27.8V57.3C5.1 57.4 5.2 57.7 5.7 57.7H14.6C14.9 57.7 15.2 57.6 15.2 57.3V28C15.2 27.9 14.9 27.6 14.6 27.6H5.7V27.4Z"
+                  />
+                  <path
+                    d="M58.7984 63H49.7984C46.6984 63 44.0984 60.5 44.0984 57.5V45.3C44.0984 44.7 43.6984 44.3 42.8984 44.3C42.2984 44.3 41.6984 44.7 41.6984 45.3V57.4C41.6984 60.5 39.1984 62.9 35.9984 62.9H27.0984C23.9984 62.9 21.3984 60.4 21.3984 57.4V28C21.3984 24.9 23.8984 22.5 27.0984 22.5H35.9984C37.8984 22.5 39.4984 23.4 40.4984 24.8C40.8984 24.7 41.3984 24.4 41.6984 24.2C44.7984 22.7 48.2984 22.3 51.4984 22.7C58.4984 23.6 63.8984 29.4 63.9984 36.4V57.7C64.2984 60.5 61.7984 63 58.7984 63ZM42.9984 39.4C46.3984 39.4 49.0984 42.2 49.0984 45.4V57.5C49.0984 57.6 49.1984 57.9 49.6984 57.9H58.5984C58.8984 57.9 59.1984 57.8 59.1984 57.5V36.3C59.0984 31.9 55.5984 28.1 50.9984 27.7C48.6984 27.4 45.9984 27.8 43.6984 28.9C42.4984 29.3 41.4984 30.1 40.4984 30.7L36.5984 33.5V28C36.5984 27.9 36.4984 27.6 35.9984 27.6H27.0984C26.7984 27.6 26.4984 27.7 26.4984 28V57.5C26.4984 57.6 26.5984 57.9 27.0984 57.9H36.0984C36.3984 57.9 36.6984 57.8 36.6984 57.5V45.3C36.8984 42 39.4984 39.4 42.9984 39.4Z"
+                  />
+                  <path
+                    d="M10.7992 21.9C4.99922 21.9 0.199219 17.2 0.199219 11.4C0.199219 5.6 4.79922 1 10.7992 1C16.7992 1 21.3992 5.7 21.3992 11.5C21.3992 17.3 16.5992 21.9 10.7992 21.9ZM10.7992 6.1C7.69922 6.1 5.09922 8.6 5.09922 11.5C5.09922 14.6 7.59922 16.9 10.7992 16.9C13.9992 16.9 16.4992 14.4 16.4992 11.5C16.4992 8.4 13.9992 6.1 10.7992 6.1Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_412_71">
+                    <rect width="64" height="64" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-black/40 p-2"
+              href="https://www.instagram.com/smwaash"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="#1C2033"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M62.9 19.2C62.8 16 62.2 13.7 61.5 11.6C60.8 9.5 59.7 7.8 58 6.1C56.3 4.4 54.6 3.4 52.6 2.6C50.6 1.8 48.4 1.3 45 1.2C41.5 1 40.5 1 32 1C23.5 1 22.6 1 19.2 1.1C15.8 1.2 13.7 1.8 11.6 2.5C9.5 3.2 7.8 4.4 6.1 6.1C4.4 7.8 3.3 9.5 2.6 11.6C1.8 13.6 1.3 15.8 1.2 19.2C1.1 22.6 1 23.5 1 32C1 40.5 1 41.4 1.1 44.8C1.2 48.2 1.8 50.3 2.5 52.4C3.2 54.5 4.3 56.2 6 57.9C7.7 59.6 9.5 60.7 11.5 61.4C13.5 62.1 15.7 62.7 19.1 62.8C22.5 63 23.4 63 31.9 63C40.4 63 41.3 63 44.7 62.9C48.1 62.8 50.2 62.2 52.3 61.5C54.4 60.8 56.1 59.7 57.8 58C59.5 56.3 60.6 54.5 61.3 52.5C62 50.5 62.6 48.3 62.7 44.9C62.8 41.7 62.8 40.7 62.8 32.2C62.8 23.7 63 22.6 62.9 19.2ZM57.3 44.5C57.2 47.5 56.6 49.1 56.2 50.3C55.6 51.7 54.9 52.8 53.8 53.8C52.7 54.9 51.7 55.5 50.3 56.2C49.2 56.6 47.6 57.2 44.5 57.3C41.3 57.3 40.3 57.3 32.1 57.3C23.9 57.3 22.8 57.3 19.6 57.2C16.6 57.1 15 56.5 13.8 56.1C12.4 55.5 11.3 54.8 10.3 53.7C9.2 52.6 8.6 51.6 7.9 50.2C7.5 49.1 6.9 47.5 6.8 44.4C6.8 41.3 6.8 40.3 6.8 32C6.8 23.7 6.8 22.7 6.9 19.5C7 16.5 7.6 14.9 8 13.7C8.6 12.3 9.3 11.2 10.3 10.2C11.4 9.1 12.4 8.5 13.8 7.9C14.9 7.5 16.5 6.9 19.6 6.8C22.8 6.7 23.8 6.7 32.1 6.7C40.4 6.7 41.4 6.7 44.6 6.8C47.6 6.9 49.2 7.5 50.4 7.9C51.8 8.5 52.9 9.2 53.9 10.2C55 11.3 55.6 12.3 56.3 13.7C56.7 14.8 57.3 16.4 57.4 19.5C57.5 22.7 57.5 23.7 57.5 32C57.5 40.3 57.4 41.3 57.3 44.5Z"
+                />
+                <path
+                  d="M32.0016 16.0996C23.1016 16.0996 16.1016 23.2996 16.1016 31.9996C16.1016 40.8996 23.3016 47.8996 32.0016 47.8996C40.7016 47.8996 48.0016 40.8996 48.0016 31.9996C48.0016 23.0996 40.9016 16.0996 32.0016 16.0996ZM32.0016 42.3996C26.2016 42.3996 21.6016 37.6996 21.6016 31.9996C21.6016 26.2996 26.3016 21.5996 32.0016 21.5996C37.8016 21.5996 42.4016 26.1996 42.4016 31.9996C42.4016 37.7996 37.8016 42.3996 32.0016 42.3996Z"
+                />
+                <path
+                  d="M48.7 19.1002C50.7435 19.1002 52.4 17.4436 52.4 15.4002C52.4 13.3567 50.7435 11.7002 48.7 11.7002C46.6565 11.7002 45 13.3567 45 15.4002C45 17.4436 46.6565 19.1002 48.7 19.1002Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="flex h-9 w-9 items-center justify-center rounded-full border border-black/40 p-2"
+              href="https://web.facebook.com/zylcom/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="#1C2033"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35.9008 62.3002H28.6008C26.4008 62.3002 24.6008 60.4002 24.6008 58.1002V36.6002H19.3008C17.1008 36.6002 15.3008 34.7002 15.3008 32.4002V26.0002C15.3008 23.7002 17.1008 21.8002 19.3008 21.8002H24.5008V16.5002C24.5008 7.8002 29.9008 1.7002 37.7008 1.7002H43.2008C45.4008 1.7002 47.2008 3.6002 47.2008 5.9002V13.4002C47.2008 15.7002 45.4008 17.6002 43.2008 17.6002H39.8008V21.7002H44.5008H44.6008C45.8008 21.8002 46.9008 22.3002 47.7008 23.2002C48.5008 24.2002 48.8008 25.4002 48.6008 26.7002L47.4008 33.0002C47.1008 35.0002 45.5008 36.4002 43.5008 36.4002H39.8008V58.0002C39.8008 60.4002 38.1008 62.3002 35.9008 62.3002ZM29.1008 57.8002H35.3008V34.2002C35.3008 33.0002 36.3008 31.9002 37.6008 31.9002H43.0008L44.1008 26.2002H37.6008C36.4008 26.2002 35.3008 25.2002 35.3008 23.9002V17.2002C35.3008 15.3002 35.8008 13.0002 39.4008 13.0002H42.7008V6.3002H37.7008C32.4008 6.3002 29.0008 10.3002 29.0008 16.6002V24.1002C29.0008 25.3002 28.0008 26.4002 26.7008 26.4002H19.8008V32.1002H26.8008C28.0008 32.1002 29.1008 33.1002 29.1008 34.4002V57.8002Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <p class="col-span-2 my-20 text-sm text-slate-400 lg:col-span-3">
+          Smwaash Copyright &copy;2020-2024, All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.industries-marquee.forward {
+  /* animation: marquee 15s cubic-bezier(0.39, 0.74, 0.91, 0.47) infinite; */
+}
+
+.industries-marquee.backward {
+  /* animation: marqueeBackward 15s cubic-bezier(0.39, 0.74, 0.91, 0.47) infinite; */
+}
+
+@keyframes marquee {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes marqueeBackward {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
